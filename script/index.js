@@ -1,7 +1,7 @@
 const cardt = document.querySelector(".card-btn");
 const griditem = document.querySelector(".grid-item");
 const images = [
-    'https://wallpapercave.com/dwp1x/wp10811769.jpg',
+    'https://wallpapercave.com/dwp1x/wp8576318.jpg',
     'https://wallpapercave.com/dwp1x/wp2182707.jpg',
     'https://wallpapercave.com/dwp1x/wp11285115.jpg',
     'https://wallpapercave.com/dwp1x/wp8650575.jpg',
@@ -26,10 +26,10 @@ function starwars(){
                 <div class="card-display displayN">
                     <h1 class="card-header">${e.name}</h1>
                     <p class="card-text ">
-                        <strong>height: ${e.height}cm </strong>
+                        <strong>Height: ${e.height}cm </strong>
                     </p>
                     <p class="card-text ">
-                         <strong> ${e.gender}</strong>
+                         <strong>Gender: ${e.gender}</strong>
                     </p>
                 </div>
 
