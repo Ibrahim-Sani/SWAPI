@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    /* background-image: url("https://uploads-ssl.webflow.com/6168ba8dd2ae854a5842be56/61bb821adfcd18676d586d9d_ezgif.com-gif-maker%20(2).gif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1 { 
+    color:black;
+    display:flex;
+    justify-content: center;
+    
+ }
+/* .grid {
+display: grid;
+width: 114em;
+grid-gap: 6rem;
+grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+align-items: start;
+} */
+/* .grid {
+    display: grid;
+    width: 100%;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(5, minmax(250px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+    overflow-x: hidden;
+} */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item {
+    /* background: url(https://media.tenor.com/Z1lv7jb7apwAAAAC/stars.gif); */
+    background: url(https://media.tenor.com/TLsSaQMZYNsAAAAd/stars-space.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.2s;
+    height: 100%;
+    width: auto;
+}
+
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgb(248, 248, 248);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit:fill;    }
+
+.card-content {
+    padding: 3rem;
+}
+
+.card-header {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+}
+
+.displayN{
+    display: none;
+}
+.displayb{
+    display: block;
+}
+
+.card-btn {
+    display: block;
+    width: 100%;
+    padding: 1.0rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+    background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+    margin-left: 1.5rem;
+}
+/* @media only screen and (max-width: 60em) {
+    body {
+        padding: 3rem;
+    }
+    .grid {
+        grid-gap: 3rem;
+    }
+} */
+#header{
+    background: url(https://media.giphy.com/media/l1uguGf2RVIsTXNDO/giphy.gif);
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-position: center;
+    
+}
+header>h1 {
+    font-size: 35px;
+    color: rgb(247, 240, 240) !important;
+}
+
+@media screen and (max-width: 500px) {
+    .responsive {
+        padding: 0px 25px;
+        background-color: black;
+        
+    }
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-gap: 4rem;
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        grid-template-rows: 1fr;
+        align-items: start;
+        overflow-x: hidden;
+        
+        
+    }
+    .card-img {
+        /* display: block; */
+        width: 90%;
+        height: auto;
+        align-self: center;
+        /* object-fit:fill;    } */
+    
+}
+.card {
+display:flex; 
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.grid-item {
+    margin-top: 10px;
+}
+}
